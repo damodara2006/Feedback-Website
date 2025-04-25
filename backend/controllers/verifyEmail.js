@@ -2,6 +2,7 @@ import nodemailer from 'nodemailer';
 import dotenv from "dotenv"
 import AsyncHandler from '../utils/AsyncHandler.js';
 
+
 dotenv.config({
     path:'.env'
 })
@@ -21,12 +22,14 @@ const transporter = nodemailer.createTransport({
     const{email} = req.body;
     const randomnumber = Math.random(1 , 5) * 1000000
     console.log(randomnumber.toFixed())
-    console.log(email)
-    await transporter.sendMail({
+    let mail=  await transporter.sendMail({
       from: '"Damodara Prakash P" <damodara2006@gmail.com>',
       to: email,
-      subject: 'test sendmail',
-      html: `Your verification code is ${randomnumber.toFixed()} valid for 60 minutes`,
+      subject: 'Feedback form',
+      html: `<div className="bg-gray-300 w-full h-full" >
+      <h3>Your verification code for Feedback form is </h3> <h1>${randomnumber.toFixed()}</h1> <h3>valid for 60 minutes</h3>
+      </div>
+      `,
     });
     res.send(randomnumber.toFixed())
   })
