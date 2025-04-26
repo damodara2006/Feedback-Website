@@ -111,7 +111,7 @@ function Home() {
   return (
     <div className='h-[100%] w-screen fixed inset-0 bg-gradient-to-bl from-red-200 via-white to-pink-200 overflow-auto overflow-y-scroll'>
     <ToastContainer />
-    <nav className='bg-gradient-to-r from-pink-400 to-pink-600 h-12 text-white flex justify-center items-center font-bold font-ubuntu fixed top-0 w-full z-50'>
+    <nav className='bg-gradient-to-r from-pink-400 to-pink-600 h-12 text-white flex justify-center items-center font-bold font-ubuntu fixed top-0 w-full z-50 overflow-y-auto'>
       FEEDBACK FORM
     </nav>
   
