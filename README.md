@@ -7,6 +7,7 @@ This project is a feedback management system that allows users to submit feedbac
 ## Project Overview
 
 ### Hosted link
+# Please wait for 20seconds to resume backend server 
 [Feedback-Website](https://idyllic-gelato-6f272a.netlify.app/)
 
 ### Features
