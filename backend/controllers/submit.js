@@ -48,4 +48,10 @@ const submit = AsyncHandler(async(req,res)=>{
     res.send(newsubmit)
 })
 
-export default submit
+const allsubmits = AsyncHandler(async(req,res)=>{
+    let allsubmit = await SubmitSchema.find({})
+    console.log(allsubmit)
+    res.send(allsubmit)
+})
+
+export  {submit , allsubmits}
