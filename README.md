@@ -7,7 +7,7 @@ This project is a feedback management system that allows users to submit feedbac
 ## Project Overview
 
 ### Hosted link
-    [`Feedback-website`](https://feedback-hk.netlify.app/)
+    https://feedback-hk.netlify.app/
 
 ### Features
 - **Feedback Submission**: Users can submit feedback, report bugs, or request features.
