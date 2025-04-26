@@ -203,7 +203,7 @@ function Home() {
         <div className='space-y-1'>
           <p>Damodara Prakash P</p>
           <a href='mailto:damodara2006@gmail.com'>damodara2006@gmail.com</a>
-          <p><a href='https://nsezfgdhttituosvrecd.supabase.co/storage/v1/object/sign/mydocuments/Damodara_Prakash_P_Resume.pdf?...'>Resume</a></p>
+          <p><a href='https://nsezfgdhttituosvrecd.supabase.co/storage/v1/object/sign/mydocuments/Damodara_Prakash_P_Resume.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2U5Y2Q1NjE1LWZkMjQtNDAxYS04NDUxLTI0YmY3YTc0YmI5NiJ9.eyJ1cmwiOiJteWRvY3VtZW50cy9EYW1vZGFyYV9QcmFrYXNoX1BfUmVzdW1lLnBkZiIsImlhdCI6MTc0NTY3MzE1MiwiZXhwIjo0ODk5MjczMTUyfQ.XMIhWZ9iV6X0AGeY8RRJVnYax3tZ7yk_6Rp-t2nyGDg'>Resume</a></p>
         </div>
       </footer>
     </div>
