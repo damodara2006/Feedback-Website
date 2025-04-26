@@ -191,7 +191,7 @@ function Home() {
               />
               {bugimage && <img src={bugimage} className='w-60' alt="Bug" />}
               <textarea
-                className="border h-56 w-[140%] max-w-[1200px] bg-gradient-to-r from-blue-100 p-3 font-mono font-extrabold rounded-2xl outline-none focus:bg-gray-200 placeholder:font-bold"
+                className="border h-56 w-[140%] max-w-[1200px] bg-gradient-to-r  bg-blue-100 p-3 font-mono font-extrabold rounded-md outline-none focus:bg-gray-200 placeholder:font-bold"
                 placeholder='What issue you had faced '
                 value={content}
                 onChange={e => setcontent(e.target.value)}
