@@ -24,7 +24,7 @@ export default function Admin() {
 
   return (
     <div className='fixed w-screen h-screen inset-0 bg-blue-300 flex flex-col '>
-       <h1 className='text-white font-extrabold text-6xl  top-0 right-[50%] text-center'>Admin</h1>
+       <h1 className='text-white font-extrabold text-3xl  top-0 right-[50%]  text-center'>Admin</h1>
       
        <div className='h-[80%]'>
        <ul className=' flex items-center flex-col justify-center h-[100%] mt-10 gap-3'>
