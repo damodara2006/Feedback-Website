@@ -83,7 +83,7 @@ function Home() {
    
       <main className='flex-grow pt-12 overflow-auto'>
         <div className='w-full flex justify-center pb-20'>
-          <div className='w-full max-w-[90%] flex flex-col items-center space-y-6 mt-20'>
+          <div className='w-full max-w-[90%] flex flex-col items-center space-y-6 mt-20 px-10'>
 
             <input
               type='text'
@@ -106,13 +106,13 @@ function Home() {
             </div>
 
             {!verfied && (
-              <div className='w-full sm:w-[60%] flex justify-center space-x-4'>
+              <div className=' w-30 flex justify-center  flex-col items-center gap-3'>
                 {code !== 0 && (
                   <input
                     type='password'
                     placeholder='Enter OTP'
                     onChange={e => setusercode(e.target.value)}
-                    className='flex-1 border rounded-2xl px-3 py-2 placeholder-gray-400 focus:outline-none'
+                    className='flex-1 border rounded-2xl px-3 py-2 w-30 text-center placeholder-gray-400 focus:outline-none'
                   />
                 )}
                 <button
@@ -128,7 +128,7 @@ function Home() {
             <select
               value={item}
               onChange={e => setitem(Number(e.target.value))}
-              className='border px-3 rounded-md w-full sm:w-auto'
+              className='border px-3 rounded-md w-[100px] '
             >
               <option value={1}>Bug</option>
               <option value={2}>Feature</option>
@@ -142,14 +142,14 @@ function Home() {
                 <input
                   type='file'
                   onChange={handlefile}
-                  className='w-full border bg-cyan-50 rounded-md px-3 py-2 focus:bg-gray-300 max-w-[600px]'
+                  className='w-full border bg-cyan-50 rounded-md px-3 py-2 focus:bg-gray-300 max-w-[600px] '
                 />
                 {bugimage && <img src={bugimage} alt='Bug' className='w-60 rounded-lg' />}
                 <textarea
                   placeholder='What issue you had faced'
                   value={content}
                   onChange={e => setcontent(e.target.value)}
-                  className='w-full border bg-gradient-to-r from-blue-100 rounded-md px-4 py-2 h-40 resize-none focus:bg-gray-200'
+                  className='w-full border bg-gradient-to-r from-blue-100 rounded-md px-4 py-2 h-40 resize-none focus:bg-gray-200 font-extrabold'
                 />
               </div>
             )}
@@ -159,7 +159,7 @@ function Home() {
                 placeholder={item === 2 ? 'Help us to improve our website' : 'Please tell your experience on our website'}
                 value={content}
                 onChange={e => setcontent(e.target.value)}
-                className='w-full sm:w-[90%] bg-blue-100 border rounded-md h-40 p-3 focus:bg-gray-200'
+                className='w-full sm:w-[90%] bg-blue-100 border rounded-md h-40 p-3 focus:bg-gray-200 font-extrabold'
               />
             )}
 
@@ -184,7 +184,7 @@ function Home() {
               <div className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300 ${
                 disview === -2000 ? 'opacity-0 pointer-events-none' : 'opacity-100'
               }`}>
-                <div className='w-[90%] max-w-xl h-[50%] overflow-y-auto backdrop-blur-lg border bg-gray-100 text-center rounded-2xl shadow-2xl relative p-5 space-y-3'>
+                <div className='w-[90%] max-w-xl  overflow-y-auto backdrop-blur-lg border bg-gray-100 text-center rounded-2xl shadow-2xl relative p-5 space-y-3'>
                   <p>Full name: {view.fullname}</p>
                   <p>Email: <span className='text-blue-700'>{view.email}</span></p>
                   <p>Type: <span className='text-blue-700'>{view.type}</span></p>
