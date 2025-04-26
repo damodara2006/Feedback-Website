@@ -72,11 +72,11 @@ function Home() {
   }
 
   return (
-    <div className='flex flex-col min-h-screen bg-gradient-to-bl from-red-200 via-white to-pink-200'>
+    <div className='flex flex-col min-h-screen bg-gradient-to-bl from-red-300 via-white to-pink-300'>
       <ToastContainer />
 
  
-      <nav className='bg-gradient-to-r from-pink-400 to-pink-600 h-12 flex items-center justify-center text-white font-bold fixed top-0 w-full z-50'>
+      <nav className='bg-gradient-to-r from-pink-500 to-pink-700 h-12 flex items-center justify-center text-white font-bold fixed top-0 w-full z-50'>
         FEEDBACK FORM
       </nav>
 
