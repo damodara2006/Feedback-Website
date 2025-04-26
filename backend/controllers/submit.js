@@ -50,7 +50,6 @@ const submit = AsyncHandler(async(req,res)=>{
 
 const allsubmits = AsyncHandler(async(req,res)=>{
     let allsubmit = await SubmitSchema.find({})
-    console.log(allsubmit)
     res.send(allsubmit)
 })
 

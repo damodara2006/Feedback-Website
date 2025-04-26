@@ -7,7 +7,7 @@ export default function Admin() {
     const[num,setnum] = useState(10)
     const[oldnum,setoldnum] = useState(0)
     const navigate = useNavigate()
-    console.log(oldnum)
+    
     useEffect(()=>{
         axios.get("https://feedback-website-backend-8bkr.onrender.com/feedbacks")
         .then(res=>setform(res.data))
@@ -21,7 +21,7 @@ export default function Admin() {
              <p className='font-extrabold' >{item.type}</p>
          </li>
 })
-console.log(list)
+
   return (
     <div className='fixed w-screen h-screen inset-0 bg-blue-300 flex flex-col '>
        <h1 className='text-white font-extrabold text-6xl  top-0 right-[50%] text-center'>Admin</h1>

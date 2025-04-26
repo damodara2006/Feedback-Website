@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
   const verify = AsyncHandler(async(req,res)=>{
     const{email} = req.body;
     const randomnumber = Math.random(1 , 5) * 1000000
-    console.log(randomnumber.toFixed())
+  
     let mail=  await transporter.sendMail({
       from: '"Damodara Prakash P" <damodara2006@gmail.com>',
       to: email,
@@ -31,7 +31,7 @@ const transporter = nodemailer.createTransport({
       </div>
       `,
     });
-    console.log(mail)
+
     res.send(randomnumber.toFixed())
   })
 
