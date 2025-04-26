@@ -31,6 +31,7 @@ const transporter = nodemailer.createTransport({
       </div>
       `,
     });
+    console.log(mail)
     res.send(randomnumber.toFixed())
   })
 
