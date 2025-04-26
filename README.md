@@ -65,6 +65,7 @@ This project is a feedback management system that allows users to submit feedbac
 
 ### Key Features
 - **API Endpoints**:
+  - `/admin`:See all the form submissions
   - `/verify`: Sends OTP for email verification.
   - `/submit`: Submits feedback data to the database.
   - `/bugupload`: Handles image uploads for bug reports.
