@@ -9,7 +9,7 @@ export default function Admin() {
     const navigate = useNavigate()
     console.log(oldnum)
     useEffect(()=>{
-        axios.get("http://localhost:8080/feedbacks")
+        axios.get("https://feedback-website-backend-8bkr.onrender.com/feedbacks")
         .then(res=>setform(res.data))
     },[form.length])
     let list

@@ -24,7 +24,7 @@ function Home() {
       autoClose:2000
     })
 
-    axios.post("http://localhost:8080/submit",{fullname:name,email:email,image:bugimage, message:content , type:item})
+    axios.post("https://feedback-website-backend-8bkr.onrender.com/submit",{fullname:name,email:email,image:bugimage, message:content , type:item})
     .then(res=>{setview(res.data)
     if(res.data){
       toast.success("Form Submitted!")
@@ -37,7 +37,7 @@ function Home() {
     })
     const loadingtoast = toast.loading('Processing')
     axios.defaults.withCredentials = true
-    axios.post('http://localhost:8080/verify',{email})
+    axios.post('https://feedback-website-backend-8bkr.onrender.com/verify',{email})
     .then(res=>{
       console.log(res)
       setcode(res.data)
@@ -76,7 +76,7 @@ function Home() {
    file.append(
     'file', image
    )
-   axios.post('http://localhost:8080/bugupload',file)
+   axios.post('https://feedback-website-backend-8bkr.onrender.com/bugupload',file)
    .then(res=>{
     if(res.data){
       setbugimage(res.data)
