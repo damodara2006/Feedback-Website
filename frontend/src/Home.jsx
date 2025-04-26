@@ -128,7 +128,7 @@ function Home() {
             <select
               value={item}
               onChange={e => setitem(Number(e.target.value))}
-              className='border px-3 rounded-md w-[100px] '
+              className='border px-3 rounded-md w-[150px] '
             >
               <option value={1}>Bug</option>
               <option value={2}>Feature</option>
@@ -159,7 +159,7 @@ function Home() {
                 placeholder={item === 2 ? 'Help us to improve our website' : 'Please tell your experience on our website'}
                 value={content}
                 onChange={e => setcontent(e.target.value)}
-                className='w-full sm:w-[90%] bg-blue-100 border rounded-md h-40 p-3 focus:bg-gray-200 font-extrabold'
+                className='w-full sm:w-[70%] max-w-[1000px] bg-blue-100 border rounded-md h-40 p-3 focus:bg-gray-200 font-extrabold'
               />
             )}
 
